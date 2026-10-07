@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Privacy Policy for LinkShape, a Chrome extension that formats and copies the current page link."
+    />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#167d64" />
+    <title>Privacy Policy · LinkShape</title>
+    <link rel="icon" type="image/svg+xml" href="icon.svg" />
+    <style>
+      :root {
+        color: #15332c;
+        background: #f4f8f6;
+        font-family:
+          Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        font-synthesis: none;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        font-size: 1rem;
+        line-height: 1.75;
+      }
+
+      a {
+        color: #116c56;
+        text-underline-offset: 0.18em;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        border-bottom: 1px solid rgba(22, 125, 100, 0.13);
+        background: rgba(244, 248, 246, 0.92);
+        backdrop-filter: blur(14px);
+      }
+
+      .topbar-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: min(100% - 2rem, 920px);
+        min-height: 68px;
+        margin-inline: auto;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.65rem;
+        color: #15332c;
+        font-size: 1.05rem;
+        font-weight: 750;
+        letter-spacing: -0.02em;
+        text-decoration: none;
+      }
+
+      .brand img {
+        width: 36px;
+        height: 36px;
+      }
+
+      .language-links {
+        display: flex;
+        gap: 0.35rem;
+      }
+
+      .language-links a {
+        border-radius: 999px;
+        padding: 0.35rem 0.75rem;
+        font-size: 0.875rem;
+        font-weight: 650;
+        text-decoration: none;
+      }
+
+      .language-links a:hover,
+      .language-links a:focus-visible {
+        background: #e3f1ec;
+        outline: none;
+      }
+
+      main {
+        width: min(100% - 2rem, 920px);
+        margin-inline: auto;
+        padding: 4.75rem 0 6rem;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 2rem;
+        align-items: end;
+        margin-bottom: 2.5rem;
+      }
+
+      .eyebrow {
+        margin: 0 0 0.55rem;
+        color: #167d64;
+        font-size: 0.875rem;
+        font-weight: 750;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        color: #0d2922;
+        font-size: clamp(2.45rem, 8vw, 4.75rem);
+        line-height: 0.98;
+        letter-spacing: -0.065em;
+      }
+
+      .date {
+        margin: 0 0 0.35rem;
+        color: #5d756e;
+        font-size: 0.9rem;
+        white-space: nowrap;
+      }
+
+      .promise {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        overflow: hidden;
+        margin-bottom: 3rem;
+        border: 1px solid #cfe1db;
+        border-radius: 22px;
+        background: #fff;
+        box-shadow: 0 18px 55px rgba(23, 80, 65, 0.08);
+      }
+
+      .promise div {
+        padding: 1.35rem 1.45rem;
+      }
+
+      .promise div + div {
+        border-left: 1px solid #dbe8e4;
+      }
+
+      .promise strong {
+        display: block;
+        margin-bottom: 0.15rem;
+        color: #0d2922;
+        font-size: 1rem;
+      }
+
+      .promise span {
+        color: #5d756e;
+        font-size: 0.9rem;
+      }
+
+      .policy {
+        padding: clamp(1.5rem, 5vw, 3rem);
+        border: 1px solid #d8e5e1;
+        border-radius: 26px;
+        background: #fff;
+      }
+
+      .policy + .policy {
+        margin-top: 2rem;
+      }
+
+      .policy h2 {
+        margin: 0 0 1.25rem;
+        color: #0d2922;
+        font-size: 1.55rem;
+        line-height: 1.25;
+        letter-spacing: -0.025em;
+      }
+
+      .policy h3 {
+        margin: 2.15rem 0 0.45rem;
+        color: #15332c;
+        font-size: 1.05rem;
+      }
+
+      .policy p,
+      .policy ul {
+        margin: 0.55rem 0;
+      }
+
+      .policy p,
+      .policy li {
+        color: #3f5851;
+      }
+
+      .policy ul {
+        padding-left: 1.35rem;
+      }
+
+      .policy code {
+        border-radius: 5px;
+        background: #eef5f2;
+        padding: 0.12rem 0.3rem;
+        color: #245548;
+        font-size: 0.9em;
+      }
+
+      footer {
+        padding-top: 2rem;
+        color: #6c817b;
+        font-size: 0.875rem;
+        text-align: center;
+      }
+
+      @media (max-width: 680px) {
+        .topbar-inner {
+          width: min(100% - 1.25rem, 920px);
+        }
+
+        main {
+          width: min(100% - 1.25rem, 920px);
+          padding-top: 3rem;
+        }
+
+        .hero {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+        }
+
+        .promise {
+          grid-template-columns: 1fr;
+        }
+
+        .promise div + div {
+          border-top: 1px solid #dbe8e4;
+          border-left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="#top" aria-label="LinkShape privacy policy">
+          <img src="icon.svg" alt="" />
+          <span>LinkShape</span>
+        </a>
+        <nav class="language-links" aria-label="Language">
+          <a href="#english" lang="en">English</a>
+          <a href="#japanese" lang="ja">日本語</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">LinkShape</p>
+          <h1 id="page-title">Privacy<br />Policy</h1>
+        </div>
+        <p class="date">Effective October 7, 2026</p>
+      </section>
+
+      <section class="promise" aria-label="Privacy summary">
+        <div>
+          <strong>No data collection</strong>
+          <span>Your links stay on your device.</span>
+        </div>
+        <div>
+          <strong>No tracking</strong>
+          <span>No analytics, ads, or user profiles.</span>
+        </div>
+        <div>
+          <strong>No network calls</strong>
+          <span>LinkShape works entirely in Chrome.</span>
+        </div>
+      </section>
+
+      <article class="policy" id="english" lang="en">
+        <h2>English</h2>
+        <p>
+          LinkShape is a Chrome extension that formats the title and URL of the
+          page you are viewing and copies the result to your clipboard.
+        </p>
+
+        <h3>Data LinkShape handles</h3>
+        <p>
+          When you click the LinkShape toolbar icon or invoke its keyboard
+          shortcut, LinkShape temporarily accesses the current tab's URL and page
+          title. It uses that information only to remove clearly identified
+          tracking parameters, format the link, and write the requested result to
+          your clipboard. LinkShape does not read the existing contents of your
+          clipboard.
+        </p>
+
+        <h3>Data storage and retention</h3>
+        <p>
+          LinkShape stores only your selected default copy format in
+          <code>chrome.storage.local</code> on your device. Page URLs, page titles,
+          formatted links, and clipboard contents are not stored. They are
+          discarded immediately after the copy operation. LinkShape does not
+          maintain browsing, link, or usage history.
+        </p>
+
+        <h3>Data transmission and sharing</h3>
+        <p>
+          LinkShape makes no external network requests. It does not transmit or
+          share page URLs, page titles, clipboard contents, settings, or usage
+          information with the developer or any third party. LinkShape has no
+          account system, analytics, advertising, tracking, or cloud service.
+        </p>
+
+        <h3>Permissions</h3>
+        <ul>
+          <li><code>activeTab</code> reads the current tab's title and URL only when you invoke LinkShape.</li>
+          <li><code>storage</code> saves only your selected default copy format on your device.</li>
+          <li><code>clipboardWrite</code> writes the formatted link you requested to your clipboard.</li>
+          <li><code>offscreen</code> enables the Manifest V3 background process to perform that clipboard write.</li>
+        </ul>
+        <p>
+          LinkShape does not request access to all websites and does not use
+          persistent host permissions.
+        </p>
+
+        <h3>Your choices</h3>
+        <p>
+          You can change the saved default format from LinkShape's Options page.
+          You can delete the saved setting by removing the extension or clearing
+          its extension data in Chrome.
+        </p>
+
+        <h3>Chrome Web Store Limited Use</h3>
+        <p>
+          LinkShape's use of information received from Chrome APIs adheres to the
+          Chrome Web Store User Data Policy, including the Limited Use
+          requirements.
+        </p>
+
+        <h3>Changes and contact</h3>
+        <p>
+          If LinkShape's data practices change, this policy and the Chrome Web
+          Store privacy disclosures will be updated before the changed version is
+          published. For privacy questions, use the support contact provided on
+          LinkShape's Chrome Web Store listing.
+        </p>
+      </article>
+
+      <article class="policy" id="japanese" lang="ja">
+        <h2>日本語</h2>
+        <p>
+          LinkShapeは、表示中のページのタイトルとURLを整形し、クリップボードにコピーするChrome拡張機能です。
+        </p>
+
+        <h3>LinkShapeが取り扱うデータ</h3>
+        <p>
+          ツールバーアイコンまたはキーボードショートカットでLinkShapeを実行したときだけ、現在のタブのURLとページタイトルに一時的にアクセスします。これらの情報は、明確に識別できる追跡用パラメータの削除、リンクの整形、および指定された結果のコピーのためにのみ使用します。クリップボードにすでにある内容は読み取りません。
+        </p>
+
+        <h3>保存と保持</h3>
+        <p>
+          保存するのは、選択した既定のコピー形式だけです。この設定はお使いの端末の<code>chrome.storage.local</code>に保存されます。URL、ページタイトル、整形済みリンク、クリップボード内容は保存せず、コピー完了後すぐに破棄します。閲覧履歴、リンク履歴、利用履歴は保持しません。
+        </p>
+
+        <h3>外部送信と共有</h3>
+        <p>
+          LinkShapeは外部とのネットワーク通信を行いません。URL、ページタイトル、クリップボード内容、設定、利用情報を開発者または第三者へ送信・共有しません。アカウント、分析、広告、追跡、クラウドサービスも使用しません。
+        </p>
+
+        <h3>権限</h3>
+        <ul>
+          <li><code>activeTab</code>: LinkShapeを実行したときだけ、現在のタブのタイトルとURLを読み取ります。</li>
+          <li><code>storage</code>: 選択した既定のコピー形式のみを端末に保存します。</li>
+          <li><code>clipboardWrite</code>: 指定した整形済みリンクをクリップボードに書き込みます。</li>
+          <li><code>offscreen</code>: Manifest V3のバックグラウンド処理からコピーを実行するために使用します。</li>
+        </ul>
+        <p>
+          すべてのWebサイトへのアクセス権限や、継続的なホスト権限は要求しません。
+        </p>
+
+        <h3>選択と削除</h3>
+        <p>
+          既定のコピー形式はLinkShapeのオプションページで変更できます。拡張機能を削除するか、Chromeで拡張機能データを消去すると、保存された設定も削除できます。
+        </p>
+
+        <h3>Chrome Web Store Limited Use</h3>
+        <p>
+          LinkShapeによるChrome APIから取得した情報の利用は、Limited Useの要件を含むChrome Web Store User Data Policyに準拠します。
+        </p>
+
+        <h3>変更とお問い合わせ</h3>
+        <p>
+          データの取り扱いを変更する場合は、変更版の公開前にこのポリシーとChrome Web Storeのプライバシー開示を更新します。プライバシーに関するお問い合わせは、LinkShapeのChrome Web Store掲載ページに表示されるサポート窓口からお送りください。
+        </p>
+      </article>
+
+      <footer>LinkShape · Privacy by design</footer>
+    </main>
+  </body>
+</html>
